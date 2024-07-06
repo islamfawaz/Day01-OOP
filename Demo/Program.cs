@@ -16,7 +16,25 @@ namespace Demo
     }
     internal class Program
     {
-        
+        [Flags]
+        enum Permission :byte
+        {
+            write=1,read=2,execute=4,delete=8
+        }
+        class Employee
+        {
+            public int id {  get; set; }    
+            public string name { get; set; }
+
+            public decimal salary { get; set; } 
+            public Permission permission { get; set; }  
+
+
+            
+        }
+
+
+
         static void Main(string[] args)
         {
             #region AccessModifiers Video3
@@ -43,7 +61,7 @@ namespace Demo
             //Console.WriteLine(G01);
 
             #endregion
-            Gender myGender;
+            // Gender myGender;
             #region Video5 Example2
 
             #region Parse Method
@@ -60,6 +78,26 @@ namespace Demo
             #endregion
 
             #endregion
+
+
+
+            #region Video6 Example 3 
+
+
+            //Employee employee = new Employee();
+            //employee.id = 101;
+            //employee.name = "Test";
+            //employee.salary = 100;
+            //employee.permission = (Permission)3;
+            //Permission MyP = (Permission)3;
+            //MyP = MyP |Permission.execute;
+            //Console.WriteLine(MyP); 
+            #endregion
+
+
         }
+
+
+
     }
 }
