@@ -29,7 +29,7 @@ namespace Demo
             #endregion
 
             #region Enum Example 1
-        //    Grade G01 = Grade.A;
+            //    Grade G01 = Grade.A;
             //if (G01 == Grade.A)
             //{
             //    Console.WriteLine(")");
@@ -43,7 +43,23 @@ namespace Demo
             //Console.WriteLine(G01);
 
             #endregion
+            Gender myGender;
+            #region Video5 Example2
 
+            #region Parse Method
+            //    myGender = Enum.Parse<Gender>(Console.ReadLine() ?? "", true);
+            //    myGender= (Gender)Enum.Parse(typeof(Gender),"Male");
+
+            #endregion
+            #region TryParse
+            //Enum.TryParse(typeof(Gender),Console.ReadLine(),true ,out object ? obj);
+            //myGender = (Gender?) obj;
+
+            // Enum.TryParse<Gender>(Console.ReadLine(), out myGender);
+            // Console.WriteLine(myGender); 
+            #endregion
+
+            #endregion
         }
     }
 }
